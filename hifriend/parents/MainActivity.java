@@ -35,19 +35,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Login.class));
             }
         });
-
-        //view pager
-        //ViewPager viewPager = findViewById(R.id.ViewPager);
-       // sliderDotspanel = findViewById(R.id.SliderDots);
-
-       // Adapter adapter = new Adapter(this);
-        //viewPager.setAdapter(adapter);
-        //new sliderDots().dots(adapter,this,sliderDotspanel,viewPager);
-
-
-        //go to parent login page
-
-
     }
 
     public void loginP(){
