@@ -39,14 +39,6 @@ public class Adapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
 
-//        for(int i=0;i<=3;i++){
-//            Button bt1 = new Button(ctx.getApplicationContext());
-//
-//        }
-
-//        Button bt1 = new Button(ctx.getApplicationContext());
-//        Button bt2 = new Button(ctx.getApplicationContext());
-//        Button bt3 = new Button(ctx.getApplicationContext());
 
         layoutInflater = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.custom, null);
@@ -61,39 +53,13 @@ public class Adapter extends PagerAdapter {
         buttons[2] = bt;
         buttons[2].setTag(3);
 
-        //ConstraintLayout l = (ConstraintLayout) layoutInflater.inflate(R.layout.custom,null);
-
-
-//        view.getTag(1);
-//        view.getTag(2);
-//        view.getTag(3);
-
-//         l.addView(bt1);
-//         l.addView(bt2);
-//         l.addView(bt3);
-
 
         img = (ImageView) view.findViewById(R.id.images);
         img.setImageResource(imageArray[position]);
 
         bt.findViewWithTag(buttons[position]);
 
-        bt.setText("Learn more");
-//        bt.setTextSize(12);
-//
-//        bt2.findViewWithTag(buttons[position]);
-//
-//        bt2.setText("Learn more");
-//        bt2.setTextSize(12);
-//
-//        bt3.findViewWithTag(buttons[position]);
-//
-//        bt3.setText("Learn more");
-//        bt3.setTextSize(12);
-
-        //bt.setBackgroundColor(34);
-
-
+        bt.setText("Learn more");     
 
         ViewPager vp = (ViewPager) container;
 
@@ -106,68 +72,16 @@ public class Adapter extends PagerAdapter {
             @Override
             public void onClick(View v) {
 
-                  // bt.setOnClickListener(listeners[i]);
-                    //buttons[0].setTag(1);
+                 
                     if(bt == buttons[0].findViewWithTag(1)){
                         ctx.startActivity(new Intent(ctx.getApplicationContext(),forgotPass.class));
 
-//
+
        }
 
-//                if(((Integer)v.getTag())==1){
-//                    ctx.startActivity(new Intent(ctx.getApplicationContext(),forgotPass.class));
-//                }
-            }
+          }
         });
 
-//        for(int i=0;i<=buttons.length;i++){
-//            bt.setOnClickListener(listeners[i]);
-//            if(((Integer)){
-//                ctx.startActivity(new Intent(ctx.getApplicationContext(),forgotPass.class));
-//            }
-//
-//        }
-
-
-//        bt.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v) {
-//
-//                if(buttons[position].equals(0)){
-//                    ctx.startActivity(new Intent(ctx.getApplicationContext(),forgotPass.class));
-//
-//                }
-//
-//
-//
-//            }
-////
-////
-//            });
-//        buttons[0].setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//
-//
-//
-//            }
-//        });
-
-        //return super.instantiateItem(container, position);
-//        layoutInflater = (LayoutInflater) ctx.getSystemService(ctx.LAYOUT_INFLATER_SERVICE);
-//        View view = layoutInflater.inflate(R.layout.activity_main,null);
-//        ImageView imgview = new ImageView(ctx);
-//        //TextView txt = new TextView(ctx);
-//        imgview.setScaleType(ImageView.ScaleType.CENTER_CROP);
-//        //TextView textView = findViewById(R.id.textone);
-//        //TextView textView = txt.findViewById(R.id.textone);
-//
-//        imgview.setImageResource(imageArray[position]);
-//        //textView.setText(texts[position]);
-//        container.addView(imgview,0);
-//
-//
         return view;
 
     }
@@ -175,16 +89,12 @@ public class Adapter extends PagerAdapter {
 
     @Override
     public void destroyItem( ViewGroup container, int position, Object object) {
-        //super.destroyItem(container, position, object);
-        //container.removeView((view) object);
-//        ImageView view = (ImageView) object;
-//        container.removeView(view);
-
+       
         ViewPager vp = (ViewPager) container;
         View view = (View) object;
         vp.removeView(view);
 
-        //container.removeView((TextView) object);
+        
     }
 
 
