@@ -10,9 +10,7 @@ UI Mockup for HiFriend -
 ![1](https://github.com/user-attachments/assets/7216dd73-90cf-423d-9ca0-b5ba6cdec05d)
 
 #LOGIN AND ACCOUNT CREATION 
-![2](https://github.com/user-attachments/assets/d05a5215-901d-4b59-b6ae-45ee54ca28ec)
-
-![3](https://github.com/user-attachments/assets/df35f6b8-2036-4f8c-bad1-23947b862866)
+![2](https://github.com/user-attachments/assets/d05a5215-901d-4b59-b6ae-45ee54ca28ec) ![3](https://github.com/user-attachments/assets/df35f6b8-2036-4f8c-bad1-23947b862866)
 
 #NOTIFICATION USING FCM - Firebase Cloud Messaging
 ![4](https://github.com/user-attachments/assets/d404007b-6836-47ac-ac01-c760efab9d6d)
