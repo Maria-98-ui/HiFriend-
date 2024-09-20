@@ -16,3 +16,6 @@ UI Mockup for HiFriend -
 ![4](https://github.com/user-attachments/assets/d404007b-6836-47ac-ac01-c760efab9d6d)
 
 
+Neural Network Model Alignment Architecture 
+
+![image](https://github.com/user-attachments/assets/50444e8e-61fa-4888-b4d7-b9bbfe4064c1)
